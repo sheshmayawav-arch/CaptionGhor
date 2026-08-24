@@ -1,0 +1,23 @@
+{
+  "name": "CaptionGhor",
+  "short_name": "CaptionGhor",
+  "description": "বাংলা ক্যাপশন খুঁজুন, কপি করুন এবং শেয়ার করুন।",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff4f8",
+  "theme_color": "#ff4778",
+  "orientation": "portrait",
+  "lang": "bn",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
