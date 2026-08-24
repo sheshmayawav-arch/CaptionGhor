@@ -378,6 +378,18 @@
     <!-- JavaScript -->
 
     <script src="script.js"></script>
-
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker.register("./sw.js")
+            .then(function () {
+                console.log("CaptionGhor PWA চালু হয়েছে");
+            })
+            .catch(function (error) {
+                console.log("Service Worker Error:", error);
+            });
+    });
+}
+</script>
 </body>
 </html>
