@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="##ff4778">
+
+    <title>CaptionGhor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <div class="logo">
+                💕
+            </div>
+
+            <div>
+                <h1>CaptionGhor</h1>
+                <p>আপনার মনের কথা, সুন্দর ক্যাপশনে</p>
+            </div>
+
+        </div>
+
+        <button id="themeBtn" class="theme-btn">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         SEARCH
+    ========================== -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="ক্যাপশন খুঁজুন..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+
+    <section class="categories">
+
+        <h2>ক্যাটাগরি</h2>
+
+        <div class="category-list">
+
+            <button class="category active" data-category="all">
+                ✨ সব
+            </button>
+
+            <button class="category" data-category="love">
+                ❤️ ভালোবাসা
+            </button>
+
+            <button class="category" data-category="attitude">
+                😎 Attitude
+            </button>
+
+            <button class="category" data-category="sad">
+                💔 কষ্ট
+            </button>
+
+            <button class="category" data-category="funny">
+                😂 মজার
+            </button>
+
+            <button class="category" data-category="friendship">
+                👫 বন্ধুত্ব
+            </button>
+
+            <button class="category" data-category="birthday">
+                🎂 জন্মদিন
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CAPTION SECTION
+    ========================== -->
+
+    <main class="caption-section">
+
+        <div class="section-title">
+
+            <div>
+                <h2>জনপ্রিয় ক্যাপশন</h2>
+                <p>আপনার পছন্দের ক্যাপশন বেছে নিন</p>
+            </div>
+
+            <button id="favoritePageBtn" class="favorite-page-btn">
+                ❤️ Favorites
+            </button>
+<button id="randomCaptionBtn" class="random-caption-btn">
+    🎲 Random Caption
+</button>
+          
+        </div>
+
+<!-- PREMIUM AD SPACE -->
+<div class="premium-ad">
+    <div class="ad-icon">📢</div>
+
+    <div class="ad-content">
+        <strong>বিজ্ঞাপনের জায়গা</strong>
+        <span>এখানে পরে বিজ্ঞাপন দেখানো হবে</span>
+    </div>
+
+    <div class="ad-label">ADVERTISEMENT</div>
+</div>
+        <!-- CAPTION 1 -->
+
+        <article class="caption-card"
+                 data-category="love">
+
+            <div class="caption-category">
+                ❤️ ভালোবাসা
+            </div>
+
+            <p class="caption-text">
+                তুমি পাশে থাকলে সাধারণ দিনটাও
+                আমার কাছে বিশেষ হয়ে যায়। ❤️
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPTION 2 -->
+
+        <article class="caption-card"
+                 data-category="attitude">
+
+            <div class="caption-category">
+                😎 Attitude
+            </div>
+
+            <p class="caption-text">
+                আমাকে বুঝতে হলে আগে আমার গল্পটা
+                পড়তে হবে, শুধু ছবি দেখে বিচার নয়। 😎
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPTION 3 -->
+
+        <article class="caption-card"
+                 data-category="sad">
+
+            <div class="caption-category">
+                💔 কষ্ট
+            </div>
+
+            <p class="caption-text">
+                কিছু মানুষ জীবনে আসে,
+                স্মৃতি হয়ে থেকে যায়। 💔
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPTION 4 -->
+
+        <article class="caption-card"
+                 data-category="funny">
+
+            <div class="caption-category">
+                😂 মজার
+            </div>
+
+            <p class="caption-text">
+                পড়াশোনা করতে বসেছিলাম,
+                মোবাইল আমাকে পড়তে দিলো না! 😂
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPTION 5 -->
+
+        <article class="caption-card"
+                 data-category="friendship">
+
+            <div class="caption-category">
+                👫 বন্ধুত্ব
+            </div>
+
+            <p class="caption-text">
+                সত্যিকারের বন্ধু দূরে থাকলেও
+                হৃদয়ের অনেক কাছে থাকে। 👫❤️
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- CAPTION 6 -->
+
+        <article class="caption-card"
+                 data-category="birthday">
+
+            <div class="caption-category">
+                🎂 জন্মদিন
+            </div>
+
+            <p class="caption-text">
+                নতুন বছর হোক নতুন স্বপ্ন,
+                নতুন আনন্দ আর সুন্দর মুহূর্তে ভরা। 🎂🎉
+            </p>
+
+            <div class="caption-actions">
+
+                <button class="copy-btn">
+                    📋 কপি
+                </button>
+
+                <button class="share-btn">
+                    📤 শেয়ার
+                </button>
+
+                <button class="favorite-btn">
+                    ♡
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </main>
+
+
+    <!-- =========================
+         NO RESULT
+    ========================== -->
+
+    <div id="noResult" class="no-result">
+
+        😔
+
+        <h3>কোনো ক্যাপশন পাওয়া যায়নি</h3>
+
+        <p>অন্য কিছু লিখে আবার চেষ্টা করুন।</p>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            💕 CaptionGhor
+        </div>
+
+        <p>
+            আপনার মনের কথা, সুন্দর ক্যাপশনে।
+        </p>
+
+        <p class="copyright">
+            © 2026 CaptionGhor
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
