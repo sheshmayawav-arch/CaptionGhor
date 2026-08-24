@@ -1393,7 +1393,7 @@ card.dataset.id = id;
         captionSection.appendChild(card);
     }
 
-    // =====================================
+// =====================================
 // 🎲 RANDOM CAPTION
 // =====================================
 
@@ -1425,6 +1425,7 @@ if (randomCaptionBtn) {
             const randomText =
                 captions[randomIndex];
 
+            // আগের Dynamic Card মুছে ফেলবে
             document
                 .querySelectorAll(
                     ".dynamic-caption-card"
@@ -1433,25 +1434,38 @@ if (randomCaptionBtn) {
                     card.remove();
                 });
 
+            // নতুন Random Caption দেখাবে
             createCard(
                 randomCategory,
                 randomText,
                 randomIndex + 1
             );
 
-            createCard(
-    randomCategory,
-    randomText,
-    randomIndex + 1
-);
-            message(
+            // সফল মেসেজ
+            showMessage(
                 "🎲 নতুন একটি Random Caption এসেছে!"
             );
+
+            // ক্যাপশনের কাছে নিয়ে যাবে
+            setTimeout(function () {
+                const newCard =
+                    document.querySelector(
+                        ".dynamic-caption-card"
+                    );
+
+                if (newCard) {
+                    newCard.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+                }
+            }, 100);
 
         }
     );
 
-}
+                }
+    
   
     // =====================================================
     // RENDER
