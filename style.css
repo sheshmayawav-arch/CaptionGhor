@@ -1249,3 +1249,462 @@ body.dark .ad-icon {
 body.dark .ad-content span {
     color: #aaa;
 }
+/* =========================================
+   🤖 AI CAPTION MAKER
+========================================= */
+
+.ai-caption-maker {
+    margin: 20px 15px 30px;
+    padding: 20px 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.96),
+            rgba(255,239,246,0.96)
+        );
+
+    border: 1px solid rgba(255,63,120,0.16);
+    border-radius: 26px;
+
+    box-shadow:
+        0 14px 40px rgba(255,63,120,0.12);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.ai-caption-maker::before {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -55px;
+    top: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,63,120,0.08);
+}
+
+
+/* =========================================
+   AI TITLE
+========================================= */
+
+.ai-title {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.ai-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3f78,
+            #ff79a3
+        );
+
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 8px 22px rgba(255,63,120,0.25);
+}
+
+.ai-title h2 {
+    font-size: 21px;
+    font-weight: 900;
+
+    color: var(--text);
+}
+
+.ai-title p {
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================
+   UPLOAD OPTIONS
+========================================= */
+
+.ai-upload-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.ai-upload-box {
+    min-height: 115px;
+
+    padding: 16px 10px;
+
+    border-radius: 20px;
+
+    border:
+        1.5px dashed
+        rgba(255,63,120,0.30);
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff8fb,
+            #fff0f5
+        );
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ai-upload-box:active {
+    transform: scale(0.96);
+}
+
+.ai-upload-box:hover {
+    border-color: var(--pink);
+
+    box-shadow:
+        0 8px 25px rgba(255,63,120,0.12);
+}
+
+.ai-upload-box input {
+    display: none;
+}
+
+.upload-icon {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+.ai-upload-box strong {
+    color: var(--pink);
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+.ai-upload-box small {
+    color: var(--muted);
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   AI PREVIEW
+========================================= */
+
+.ai-preview {
+    margin-top: 14px;
+
+    min-height: 80px;
+
+    border-radius: 18px;
+
+    background:
+        #fff7fa;
+
+    border:
+        1px solid rgba(255,63,120,0.10);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    overflow: hidden;
+}
+
+.ai-preview img,
+.ai-preview video {
+    width: 100%;
+    max-height: 280px;
+
+    object-fit: contain;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================
+   GENERATE BUTTON
+========================================= */
+
+.generate-ai-btn {
+    width: 100%;
+
+    margin-top: 14px;
+
+    min-height: 52px;
+
+    border: none;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3f78,
+            #ff78a2
+        );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 9px 25px rgba(255,63,120,0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.generate-ai-btn:active {
+    transform: scale(0.96);
+
+    box-shadow:
+        0 5px 15px rgba(255,63,120,0.20);
+}
+
+
+/* =========================================
+   AI RESULT
+========================================= */
+
+.ai-result {
+    margin-top: 17px;
+
+    padding: 15px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border:
+        1px solid rgba(255,63,120,0.13);
+
+    box-shadow:
+        0 8px 25px rgba(255,63,120,0.08);
+}
+
+.result-title,
+.hashtag-title {
+    color: var(--pink);
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    margin-bottom: 7px;
+}
+
+#aiCaptionText,
+#aiHashtagText {
+    display: block;
+
+    background:
+        #fff7fa;
+
+    border:
+        1px solid #f0dce4;
+
+    border-radius: 15px;
+
+    padding: 13px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 13px;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   COPY AI BUTTON
+========================================= */
+
+.copy-ai-btn {
+    width: 100%;
+
+    min-height: 45px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe2ec
+        );
+
+    color: var(--pink);
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.copy-ai-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   DARK MODE — AI
+========================================= */
+
+body.dark .ai-caption-maker {
+    background:
+        linear-gradient(
+            145deg,
+            #1e1e29,
+            #29232d
+        );
+
+    border-color:
+        rgba(255,255,255,0.08);
+}
+
+body.dark .ai-upload-box {
+    background:
+        #24242f;
+
+    border-color:
+        rgba(255,63,120,0.25);
+}
+
+body.dark .ai-preview {
+    background:
+        #20202a;
+
+    border-color:
+        rgba(255,255,255,0.07);
+}
+
+body.dark .ai-result {
+    background:
+        #24242f;
+
+    border-color:
+        rgba(255,255,255,0.08);
+}
+
+body.dark #aiCaptionText,
+body.dark #aiHashtagText {
+    background:
+        #1d1d27;
+
+    border-color:
+        rgba(255,255,255,0.08);
+
+    color:
+        #f5f3f7;
+}
+
+body.dark .copy-ai-btn {
+    background:
+        rgba(255,63,120,0.13);
+
+    color:
+        #ff72a0;
+}
+
+
+/* =========================================
+   SMALL PHONE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .ai-caption-maker {
+        padding: 17px 13px;
+    }
+
+    .ai-upload-options {
+        gap: 8px;
+    }
+
+    .ai-upload-box {
+        min-height: 105px;
+    }
+
+    .ai-title h2 {
+        font-size: 19px;
+    }
+
+    .ai-title p {
+        font-size: 11px;
+    }
+   }
